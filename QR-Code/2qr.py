@@ -7,5 +7,5 @@ qr=qrcode.QRCode(version=1,
 
 qr.add_data("https://github.com/forenus/")
 qr.make(fit=True)
-img=qr.make_image(fill_color="red",blck_color="blue")
+img=qr.make_image(fill_color="red",blck_color="white")
 img.save("githubprofile.png")
