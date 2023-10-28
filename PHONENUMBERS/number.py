@@ -1,0 +1,15 @@
+import phonenumbers
+from phonenumbers import timezone,geocoder,carrier
+number=input("enter your number with +__: ")
+phone=phonenumbers.parse(number)
+time=timezone.time_zones_for_geographical_number(phone)
+time1=timezone.time_zones_for_geographical_number(phone)
+car=carrier.name_for_number(phone,"en")
+reg=geocoder.description_for_number(phone,"en")
+call=phonenumbers.PhoneMetadata.load_all()
+print(phone)
+print(time)
+print(time1)
+print(car)
+print(reg)
+print(call)
